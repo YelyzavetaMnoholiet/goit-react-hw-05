@@ -1,6 +1,7 @@
 import "modern-normalize";
 import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
+
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const MoviesPage = lazy(() => import("./pages/MoviesPage/MoviesPage"));
 const MovieDetailsPage = lazy(() =>
@@ -20,7 +21,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/movies/:moviesId" element={<MoviesPage />} />
+          <Route path="/movies" element={<MoviesPage />} />
           <Route path="/movies/:moviesId" element={<MovieDetailsPage />}>
             <Route index element={<p>Select one of additional option</p>} />
             <Route path="cast" element={<MovieCast />} />
