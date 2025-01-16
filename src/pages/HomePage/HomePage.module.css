@@ -1,0 +1,36 @@
+.title {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.movieContainer {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movieName {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.movieName:hover,
+.movieName:focus {
+  color: orange;
+}

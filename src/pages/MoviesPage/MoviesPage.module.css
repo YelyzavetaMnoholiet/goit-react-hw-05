@@ -1,0 +1,26 @@
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.form {
+  position: relative;
+}
+
+.field {
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 40px;
+}
+
+.button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 12px;
+  left: 8px;
+}
